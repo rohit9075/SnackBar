@@ -25,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
     public void snackBar(View view) {
 
 
+        /*
+         * Make a Snackbar to display a message
+
+         * @param view     The view to find a parent from.
+         * @param text     The text to show.  Can be formatted text.
+         * @param duration How long to display the message. Either length Short or length long
+         */
+
         Snackbar.make(relativeLayout, "This is main activity", Snackbar.LENGTH_LONG)
                 .setAction("CLOSE", new View.OnClickListener() {
                     @Override
@@ -32,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Hi", Toast.LENGTH_SHORT).show();
                     }
                 })
-                .setActionTextColor(getResources().getColor(android.R.color.holo_red_light ))
                 .show();
 
     }

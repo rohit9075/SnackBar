@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Relative layout reference variable
     RelativeLayout relativeLayout;
 
     @Override
@@ -16,9 +17,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // object instantiation
         relativeLayout = findViewById(R.id.parentLayout);
     }
 
+    // Button onclick method call
     public void snackBar(View view) {
 
 
@@ -31,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 })
                 .setActionTextColor(getResources().getColor(android.R.color.holo_red_light ))
                 .show();
-        //Other stuff in OnCreate();
+
     }
 
 }
